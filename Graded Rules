@@ -1,6 +1,8 @@
 We can show how this challenge is graded
 This challenge is graded based on the tasks you are expected to complete. By clicking the button, you see a more specific explanation of each one, however, this will be marked and might reduce your rewards.
 Bastion Host EC2 instance should accept traffic via SSH, HTTP, and HTTPS from outside the VPC
+Public-A subnet should accept SSH, HTTP, and HTTPS traffic from outside the VPC
+Public-B subnet should accept SSH, HTTP, and HTTPS traffic from outside the VPC
 
 App-1 EC2 instance should accept SSH traffic from Admin instances and HTTP traffic from the Load Balancer
 App-2 EC2 instance should accept SSH traffic from Admin instances and HTTP traffic from the Load Balancer
@@ -11,8 +13,7 @@ Admin-2 EC2 instance should accept SSH traffic from the Bastion Host
 
 Application Load Balancer should accept HTTP and HTTPS traffic from outside the VPC
 
-Public-A subnet should accept SSH, HTTP, and HTTPS traffic from outside the VPC
-Public-B subnet should accept SSH, HTTP, and HTTPS traffic from outside the VPC
+
 
 App-A subnet should accept HTTP traffic from the Public subnets and SSH traffic from the Admin subnets
 App-B subnet should accept HTTP traffic from the Public subnets and SSH traffic from the Admin subnets
