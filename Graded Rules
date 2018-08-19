@@ -1,0 +1,39 @@
+We can show how this challenge is graded
+This challenge is graded based on the tasks you are expected to complete. By clicking the button, you see a more specific explanation of each one, however, this will be marked and might reduce your rewards.
+Bastion Host EC2 instance should accept traffic via SSH, HTTP, and HTTPS from outside the VPC
+
+App-1 EC2 instance should accept SSH traffic from Admin instances and HTTP traffic from the Load Balancer
+App-2 EC2 instance should accept SSH traffic from Admin instances and HTTP traffic from the Load Balancer
+
+
+Admin-1 EC2 instance should accept SSH traffic from the Bastion Host
+Admin-2 EC2 instance should accept SSH traffic from the Bastion Host
+
+Application Load Balancer should accept HTTP and HTTPS traffic from outside the VPC
+
+Public-A subnet should accept SSH, HTTP, and HTTPS traffic from outside the VPC
+Public-B subnet should accept SSH, HTTP, and HTTPS traffic from outside the VPC
+
+App-A subnet should accept HTTP traffic from the Public subnets and SSH traffic from the Admin subnets
+App-B subnet should accept HTTP traffic from the Public subnets and SSH traffic from the Admin subnets
+
+DB-A subnet should accept MySQL/Aurora traffic from the App and Admin subnets
+DB-B subnet should accept MySQL/Aurora traffic from the App and Admin subnets
+
+Admin-A subnet should accept SSH traffic from the Public subnets
+Admin-B subnet should accept SSH traffic from the Public subnets
+
+DB-A subnet should use a route table with local routes only
+DB-B subnet should use a route table with local routes only
+
+App-A subnet should use a route table with a NAT gateway
+App-B subnet should use a route table with a NAT gateway
+
+Admin-A subnet should use a route table with a NAT gateway
+Admin-B subnet should use a route table with a NAT gateway
+
+Public-A subnet should use a route table with an internet gateway
+Public-B subnet should use a route table with an internet gateway
+
+DB-1 instance should accept MySQL/Aurora traffic from the App and Admin instances
+DB-2 instance should accept MySQL/Aurora traffic from the App and Admin instances
