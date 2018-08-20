@@ -1,0 +1,33 @@
+#### Managing a Network ACL
+
+    An AWS Network Access Control List (NACL) works as a firewall at the VPC level for 
+    controlling incoming and outgoing requests from one or more subnets associated 
+    with that VPC. It is used in conjunction with the 
+    in controlling traffic to the AWS. When we create a VPC, a
+     default NACL is created that is open to every IP and port. T
+     he subnet is associated with the default NACL created during its creation. 
+     We can create a custom NACL and associate it with a subnet,
+      thus replacing the default NACL.
+      
+#####Managing a Security Group
+     Security Group (SG) works as a virtual firewall that controls incoming traffic
+      to protect resources hosted in AWS, such as EC2 and RDS, from unwanted access.
+       The same SGs should be associated with services/resources having the same 
+       functionality and security requirements such as a cluster of web servers. 
+       SGs can span across different subnets in a VPC. SGs are stateful firewall
+       s where you can define rules for a valid source, protocol, and port for 
+       incoming and outgoing traffic. Stateful meaning--if the connection 
+       from source to destination is allowed, the return path is also allowed.
+        At least one SG needs to be attached to the resource at the time of
+         resource creation. More than one SG can also be attached to a resource. 
+         The rules of an SG can be modified at any time and they will take effect 
+         
+         immediately. An SG can be detached from the resource at any time.
+    
+
+#### Managing a Route Table
+
+    A Route Table contains a set of rules that control how the network t
+    raffic flows within a VPC and outside of it. Each subnet must be 
+    associated with one Route Table. However, Route Tables may contain 
+    more than one subnet that needs the same route configuration.
